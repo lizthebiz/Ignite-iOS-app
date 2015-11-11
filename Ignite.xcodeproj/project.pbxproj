@@ -14,6 +14,10 @@
 		D17016201BF3B6560014899E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D170161E1BF3B6560014899E /* LaunchScreen.storyboard */; };
 		D170162B1BF3B6560014899E /* IgniteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170162A1BF3B6560014899E /* IgniteTests.swift */; };
 		D17016361BF3B6560014899E /* IgniteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016351BF3B6560014899E /* IgniteUITests.swift */; };
+		D17016441BF3CACA0014899E /* customTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016431BF3CACA0014899E /* customTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D17016481BF3E7A20014899E /* projectCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016471BF3E7A20014899E /* projectCardCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D191B8EE1BF3ECF7004B3C90 /* homeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D19D2F051BF3FAF700696DE7 /* audienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D17016311BF3B6560014899E /* IgniteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgniteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17016351BF3B6560014899E /* IgniteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgniteUITests.swift; sourceTree = "<group>"; };
 		D17016371BF3B6560014899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17016431BF3CACA0014899E /* customTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTabViewController.swift; sourceTree = "<group>"; };
+		D17016471BF3E7A20014899E /* projectCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = projectCardCell.swift; path = ../projectCardCell.swift; sourceTree = "<group>"; };
+		D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homeFeedViewController.swift; path = ../homeFeedViewController.swift; sourceTree = "<group>"; };
+		D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audienceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		D17016141BF3B6560014899E /* Ignite */ = {
 			isa = PBXGroup;
 			children = (
+				D19D2F031BF3FA7200696DE7 /* View Controllers */,
+				D17016471BF3E7A20014899E /* projectCardCell.swift */,
 				D17016151BF3B6560014899E /* AppDelegate.swift */,
 				D17016171BF3B6560014899E /* ViewController.swift */,
 				D17016191BF3B6560014899E /* Main.storyboard */,
@@ -123,6 +133,16 @@
 				D17016371BF3B6560014899E /* Info.plist */,
 			);
 			path = IgniteUITests;
+			sourceTree = "<group>";
+		};
+		D19D2F031BF3FA7200696DE7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */,
+				D17016431BF3CACA0014899E /* customTabViewController.swift */,
+				D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17016181BF3B6560014899E /* ViewController.swift in Sources */,
+				D17016481BF3E7A20014899E /* projectCardCell.swift in Sources */,
+				D19D2F051BF3FAF700696DE7 /* audienceViewController.swift in Sources */,
+				D191B8EE1BF3ECF7004B3C90 /* homeFeedViewController.swift in Sources */,
+				D17016441BF3CACA0014899E /* customTabViewController.swift in Sources */,
 				D17016161BF3B6560014899E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +508,7 @@
 				D170163C1BF3B6560014899E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D170163D1BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				D170163F1BF3B6560014899E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D17016401BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +526,7 @@
 				D17016421BF3B6560014899E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
