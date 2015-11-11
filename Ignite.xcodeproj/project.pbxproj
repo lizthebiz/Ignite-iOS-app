@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D17016161BF3B6560014899E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016151BF3B6560014899E /* AppDelegate.swift */; };
+		D17016181BF3B6560014899E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016171BF3B6560014899E /* ViewController.swift */; };
+		D170161B1BF3B6560014899E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17016191BF3B6560014899E /* Main.storyboard */; };
+		D170161D1BF3B6560014899E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D170161C1BF3B6560014899E /* Assets.xcassets */; };
+		D17016201BF3B6560014899E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D170161E1BF3B6560014899E /* LaunchScreen.storyboard */; };
+		D170162B1BF3B6560014899E /* IgniteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170162A1BF3B6560014899E /* IgniteTests.swift */; };
+		D17016361BF3B6560014899E /* IgniteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016351BF3B6560014899E /* IgniteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D17016271BF3B6560014899E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D170160A1BF3B6560014899E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D17016111BF3B6560014899E;
+			remoteInfo = Ignite;
+		};
+		D17016321BF3B6560014899E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D170160A1BF3B6560014899E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D17016111BF3B6560014899E;
+			remoteInfo = Ignite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D17016121BF3B6560014899E /* Ignite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ignite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17016151BF3B6560014899E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D17016171BF3B6560014899E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D170161A1BF3B6560014899E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D170161C1BF3B6560014899E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D170161F1BF3B6560014899E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D17016211BF3B6560014899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17016261BF3B6560014899E /* IgniteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgniteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D170162A1BF3B6560014899E /* IgniteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgniteTests.swift; sourceTree = "<group>"; };
+		D170162C1BF3B6560014899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17016311BF3B6560014899E /* IgniteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IgniteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17016351BF3B6560014899E /* IgniteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgniteUITests.swift; sourceTree = "<group>"; };
+		D17016371BF3B6560014899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D170160F1BF3B6560014899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17016231BF3B6560014899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D170162E1BF3B6560014899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D17016091BF3B6560014899E = {
+			isa = PBXGroup;
+			children = (
+				D17016141BF3B6560014899E /* Ignite */,
+				D17016291BF3B6560014899E /* IgniteTests */,
+				D17016341BF3B6560014899E /* IgniteUITests */,
+				D17016131BF3B6560014899E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D17016131BF3B6560014899E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D17016121BF3B6560014899E /* Ignite.app */,
+				D17016261BF3B6560014899E /* IgniteTests.xctest */,
+				D17016311BF3B6560014899E /* IgniteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D17016141BF3B6560014899E /* Ignite */ = {
+			isa = PBXGroup;
+			children = (
+				D17016151BF3B6560014899E /* AppDelegate.swift */,
+				D17016171BF3B6560014899E /* ViewController.swift */,
+				D17016191BF3B6560014899E /* Main.storyboard */,
+				D170161C1BF3B6560014899E /* Assets.xcassets */,
+				D170161E1BF3B6560014899E /* LaunchScreen.storyboard */,
+				D17016211BF3B6560014899E /* Info.plist */,
+			);
+			path = Ignite;
+			sourceTree = "<group>";
+		};
+		D17016291BF3B6560014899E /* IgniteTests */ = {
+			isa = PBXGroup;
+			children = (
+				D170162A1BF3B6560014899E /* IgniteTests.swift */,
+				D170162C1BF3B6560014899E /* Info.plist */,
+			);
+			path = IgniteTests;
+			sourceTree = "<group>";
+		};
+		D17016341BF3B6560014899E /* IgniteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D17016351BF3B6560014899E /* IgniteUITests.swift */,
+				D17016371BF3B6560014899E /* Info.plist */,
+			);
+			path = IgniteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D17016111BF3B6560014899E /* Ignite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D170163A1BF3B6560014899E /* Build configuration list for PBXNativeTarget "Ignite" */;
+			buildPhases = (
+				D170160E1BF3B6560014899E /* Sources */,
+				D170160F1BF3B6560014899E /* Frameworks */,
+				D17016101BF3B6560014899E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ignite;
+			productName = Ignite;
+			productReference = D17016121BF3B6560014899E /* Ignite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D17016251BF3B6560014899E /* IgniteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D170163D1BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteTests" */;
+			buildPhases = (
+				D17016221BF3B6560014899E /* Sources */,
+				D17016231BF3B6560014899E /* Frameworks */,
+				D17016241BF3B6560014899E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D17016281BF3B6560014899E /* PBXTargetDependency */,
+			);
+			name = IgniteTests;
+			productName = IgniteTests;
+			productReference = D17016261BF3B6560014899E /* IgniteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D17016301BF3B6560014899E /* IgniteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17016401BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteUITests" */;
+			buildPhases = (
+				D170162D1BF3B6560014899E /* Sources */,
+				D170162E1BF3B6560014899E /* Frameworks */,
+				D170162F1BF3B6560014899E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D17016331BF3B6560014899E /* PBXTargetDependency */,
+			);
+			name = IgniteUITests;
+			productName = IgniteUITests;
+			productReference = D17016311BF3B6560014899E /* IgniteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D170160A1BF3B6560014899E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Liz Dalay";
+				TargetAttributes = {
+					D17016111BF3B6560014899E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = G2GH3447ZE;
+					};
+					D17016251BF3B6560014899E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = G2GH3447ZE;
+						TestTargetID = D17016111BF3B6560014899E;
+					};
+					D17016301BF3B6560014899E = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = G2GH3447ZE;
+						TestTargetID = D17016111BF3B6560014899E;
+					};
+				};
+			};
+			buildConfigurationList = D170160D1BF3B6560014899E /* Build configuration list for PBXProject "Ignite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D17016091BF3B6560014899E;
+			productRefGroup = D17016131BF3B6560014899E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D17016111BF3B6560014899E /* Ignite */,
+				D17016251BF3B6560014899E /* IgniteTests */,
+				D17016301BF3B6560014899E /* IgniteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D17016101BF3B6560014899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17016201BF3B6560014899E /* LaunchScreen.storyboard in Resources */,
+				D170161D1BF3B6560014899E /* Assets.xcassets in Resources */,
+				D170161B1BF3B6560014899E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17016241BF3B6560014899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D170162F1BF3B6560014899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D170160E1BF3B6560014899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17016181BF3B6560014899E /* ViewController.swift in Sources */,
+				D17016161BF3B6560014899E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17016221BF3B6560014899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D170162B1BF3B6560014899E /* IgniteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D170162D1BF3B6560014899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17016361BF3B6560014899E /* IgniteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D17016281BF3B6560014899E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D17016111BF3B6560014899E /* Ignite */;
+			targetProxy = D17016271BF3B6560014899E /* PBXContainerItemProxy */;
+		};
+		D17016331BF3B6560014899E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D17016111BF3B6560014899E /* Ignite */;
+			targetProxy = D17016321BF3B6560014899E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D17016191BF3B6560014899E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D170161A1BF3B6560014899E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D170161E1BF3B6560014899E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D170161F1BF3B6560014899E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D17016381BF3B6560014899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D17016391BF3B6560014899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D170163B1BF3B6560014899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ignite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.Ignite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D170163C1BF3B6560014899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ignite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.Ignite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D170163E1BF3B6560014899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IgniteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.IgniteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ignite.app/Ignite";
+			};
+			name = Debug;
+		};
+		D170163F1BF3B6560014899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IgniteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.IgniteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ignite.app/Ignite";
+			};
+			name = Release;
+		};
+		D17016411BF3B6560014899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IgniteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.IgniteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ignite;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D17016421BF3B6560014899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IgniteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lizdalay.IgniteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ignite;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D170160D1BF3B6560014899E /* Build configuration list for PBXProject "Ignite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17016381BF3B6560014899E /* Debug */,
+				D17016391BF3B6560014899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D170163A1BF3B6560014899E /* Build configuration list for PBXNativeTarget "Ignite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D170163B1BF3B6560014899E /* Debug */,
+				D170163C1BF3B6560014899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D170163D1BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D170163E1BF3B6560014899E /* Debug */,
+				D170163F1BF3B6560014899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D17016401BF3B6560014899E /* Build configuration list for PBXNativeTarget "IgniteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17016411BF3B6560014899E /* Debug */,
+				D17016421BF3B6560014899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D170160A1BF3B6560014899E /* Project object */;
+}
