@@ -18,6 +18,10 @@ class projectCardCell: UITableViewCell {
     
     @IBOutlet weak var badgesImageView: UIImageView!
     
+    @IBOutlet weak var projNameLabel: UILabel!
+    
+    @IBOutlet weak var projDescripLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
