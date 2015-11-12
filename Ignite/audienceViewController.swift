@@ -18,6 +18,9 @@ class audienceViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.nextBarView.alpha = 0
+        self.selectIconImageView.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +40,12 @@ class audienceViewController: UIViewController {
     */
 
     @IBAction func onTap(sender: AnyObject) {
+        
+        self.selectIconImageView.alpha = 1
+        
+        UIView.animateWithDuration(0.8, animations: {
+            self.nextBarView.alpha = 1
+        })
         
         
     }
