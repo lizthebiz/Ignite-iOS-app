@@ -51,7 +51,6 @@ class customTabViewController: UIViewController {
         addChildViewController(homeViewController)
         
         homeViewController.view.frame = contentView.frame
-        
         contentView.addSubview(homeViewController.view)
         
         //also add to every new View Controller associated with tab section

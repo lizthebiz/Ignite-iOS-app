@@ -18,6 +18,8 @@
 		D17016481BF3E7A20014899E /* projectCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016471BF3E7A20014899E /* projectCardCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D191B8EE1BF3ECF7004B3C90 /* homeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D19D2F051BF3FAF700696DE7 /* audienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D19D2F071BF48F2100696DE7 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D2F061BF48F2100696DE7 /* categoriesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D1A907F11BF4A04A009401DA /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A907F01BF4A04A009401DA /* loginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D17016471BF3E7A20014899E /* projectCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = projectCardCell.swift; path = ../projectCardCell.swift; sourceTree = "<group>"; };
 		D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homeFeedViewController.swift; path = ../homeFeedViewController.swift; sourceTree = "<group>"; };
 		D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audienceViewController.swift; sourceTree = "<group>"; };
+		D19D2F061BF48F2100696DE7 /* categoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
+		D1A907F01BF4A04A009401DA /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +142,11 @@
 		D19D2F031BF3FA7200696DE7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D19D2F061BF48F2100696DE7 /* categoriesViewController.swift */,
 				D191B8ED1BF3ECF7004B3C90 /* homeFeedViewController.swift */,
 				D17016431BF3CACA0014899E /* customTabViewController.swift */,
 				D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */,
+				D1A907F01BF4A04A009401DA /* loginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -278,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19D2F071BF48F2100696DE7 /* categoriesViewController.swift in Sources */,
 				D17016181BF3B6560014899E /* ViewController.swift in Sources */,
 				D17016481BF3E7A20014899E /* projectCardCell.swift in Sources */,
 				D19D2F051BF3FAF700696DE7 /* audienceViewController.swift in Sources */,
+				D1A907F11BF4A04A009401DA /* loginViewController.swift in Sources */,
 				D191B8EE1BF3ECF7004B3C90 /* homeFeedViewController.swift in Sources */,
 				D17016441BF3CACA0014899E /* customTabViewController.swift in Sources */,
 				D17016161BF3B6560014899E /* AppDelegate.swift in Sources */,

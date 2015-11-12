@@ -16,11 +16,17 @@ class projectCardCell: UITableViewCell {
     
     @IBOutlet weak var projImageView: UIImageView!
     
-    @IBOutlet weak var badgesImageView: UIImageView!
+    @IBOutlet weak var firstBadgeImageView: UIImageView!
+    
+    @IBOutlet weak var secondBadgeImageView: UIImageView!
+    
+    @IBOutlet weak var thirdBadgeImageView: UIImageView!
     
     @IBOutlet weak var projNameLabel: UILabel!
     
     @IBOutlet weak var projDescripLabel: UILabel!
+    
+    @IBOutlet weak var projStatusLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
