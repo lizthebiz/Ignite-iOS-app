@@ -333,7 +333,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GGR-ZJ-cvr" kind="push" id="5fH-uw-ib0"/>
+                                    <segue destination="GGR-ZJ-cvr" kind="push" animates="NO" id="5fH-uw-ib0"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -349,15 +349,26 @@
             <objects>
                 <viewController id="GGR-ZJ-cvr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFa-Ff-7w7">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="721"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lHB-YH-BP0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-profile" id="TxR-yi-MeN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1217"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-joined-project" id="2bg-kv-60n">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="shH-9s-6UI">
+                                        <rect key="frame" x="12" y="585" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="lt4-wH-515" kind="push" id="Hu7-e3-02u"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="joined-notification" id="yhx-59-UJA">
+                                        <rect key="frame" x="68" y="197" width="239" height="239"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -377,11 +388,40 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="785"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oz0-8M-zyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5439.5" y="4081.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SWe-ck-hCM">
+            <objects>
+                <viewController id="lt4-wH-515" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBd-tu-eTh">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TCH-3h-ZhH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-profile" id="Nek-hk-ijm">
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="1217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rCE-ee-hSh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPq-vS-y0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5910.5" y="4081.5"/>
         </scene>
         <!--Invite People-->
         <scene sceneID="uxK-4z-DP5">
@@ -457,9 +497,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="tkn-bp-Xa3">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7RG-j2-tNY">
-                                <rect key="frame" x="319" y="7" width="40" height="30"/>
+                                <rect key="frame" x="322" y="7" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="Invite">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -902,9 +942,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pl5-pj-fh3">
                                 <rect key="frame" x="0.0" y="313" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="4ml-w0-Xl7" kind="push" id="DhD-yI-b4k"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SFt-GY-v57">
                                 <rect key="frame" x="12" y="551" width="351" height="40"/>
@@ -914,6 +951,9 @@
                                 <state key="normal" title="Publish project">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4ml-w0-Xl7" kind="push" id="fHi-Nh-GPN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -955,9 +995,6 @@
                                 <state key="normal" title="Add time commitment">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="a1C-jz-l05" kind="push" animates="NO" id="exh-hH-UN0"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -984,7 +1021,7 @@
             <objects>
                 <viewController id="a1C-jz-l05" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sOx-LE-lhh">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="screen-create-7-updated-deets" id="RVQ-Dv-NiL">
@@ -1283,6 +1320,8 @@
         <image name="create-3-category-instructions" width="375" height="117"/>
         <image name="create-project-action-2x" width="37" height="28"/>
         <image name="home-tab-2x" width="75" height="50"/>
+        <image name="joined-notification" width="239" height="239"/>
+        <image name="m-joined-project" width="375" height="721"/>
         <image name="m-profile" width="375" height="1217"/>
         <image name="m-project-page" width="375" height="619"/>
         <image name="m-screen-email" width="375" height="667"/>
