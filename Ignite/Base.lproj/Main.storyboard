@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="blD-xm-v40">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9SU-Pz-Hnv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -104,11 +104,11 @@
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="projectCardCell" rowHeight="415" id="2MI-5F-zYE" customClass="projectCardCell" customModule="Ignite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="415"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="projectCardCell" rowHeight="408" id="2MI-5F-zYE" customClass="projectCardCell" customModule="Ignite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="408"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2MI-5F-zYE" id="2KJ-ZG-Qti">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="408"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="Hea-zr-AAm">
@@ -220,14 +220,6 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="screen-updated-home" id="a4F-24-QG3">
-                                <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav" id="D8v-V0-Nib">
-                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eq5-cS-MCM">
                                 <rect key="frame" x="193" y="405" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -235,8 +227,24 @@
                                     <segue destination="mbQ-Au-8Am" kind="modal" modalTransitionStyle="coverVertical" id="2Ni-sT-FdW"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-new-project" id="NE3-mC-kId">
+                                <rect key="frame" x="8" y="-205" width="359" height="440"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-prev-projects" id="yAu-lT-Gl1">
+                                <rect key="frame" x="8" y="243" width="359" height="806"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feedback-blip-published" id="7yU-GS-h8L">
+                                <rect key="frame" x="68" y="132" width="239" height="239"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav" id="D8v-V0-Nib">
+                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ignite" id="kD9-I9-kmT">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="EWh-AM-r4B">
@@ -727,31 +735,31 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="selected-check-icon" id="fW9-4E-pbP">
-                                                <rect key="frame" x="338" y="180" width="25" height="25"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NE1-Gl-Qda">
-                                                <rect key="frame" x="0.0" y="157" width="375" height="73"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="onTapTech:" destination="G9Y-Ue-HLR" eventType="touchUpInside" id="vA1-bx-d86"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gIx-gM-X38">
-                                                <rect key="frame" x="0.0" y="627" width="375" height="74"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <action selector="onTapWom:" destination="G9Y-Ue-HLR" eventType="touchUpInside" id="u3s-r8-ZpE"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="selected-check-icon" id="fW9-4E-pbP">
+                                        <rect key="frame" x="338" y="180" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NE1-Gl-Qda">
+                                        <rect key="frame" x="0.0" y="157" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onTapTech:" destination="G9Y-Ue-HLR" eventType="touchUpInside" id="vA1-bx-d86"/>
+                                        </connections>
+                                    </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="selected-check-icon" id="0Sv-Q6-IUd">
                                         <rect key="frame" x="338" y="651" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gIx-gM-X38">
+                                        <rect key="frame" x="0.0" y="627" width="375" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onTapWom:" destination="G9Y-Ue-HLR" eventType="touchUpInside" id="iwi-6N-Yt6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <view contentMode="scaleToFill" id="S8L-un-Q3p">
@@ -811,7 +819,7 @@
                         <outlet property="categoriesView" destination="eVN-2T-wjx" id="9Of-Yb-maV"/>
                         <outlet property="nextButton" destination="xVI-M8-hRq" id="anK-Qf-bd5"/>
                         <outlet property="selectedTechImageView" destination="fW9-4E-pbP" id="mvj-vr-rUG"/>
-                        <outlet property="selectedWomImageView" destination="0Sv-Q6-IUd" id="EcD-GC-S5h"/>
+                        <outlet property="selectedWomImageView" destination="0Sv-Q6-IUd" id="SVE-xh-amh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lf-hn-L1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -837,42 +845,35 @@
                                     <action selector="onTap:" destination="HMS-4e-jKj" eventType="touchUpInside" id="V5J-Dr-oHU"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="jPI-jk-Kdz">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="next-bar-bg" id="MDi-eX-Yhl">
                                 <rect key="frame" x="0.0" y="542" width="375" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EJa-QA-Pkg">
+                                <rect key="frame" x="266" y="553" width="99" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="next-bar-bg" id="MDi-eX-Yhl">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EJa-QA-Pkg">
-                                        <rect key="frame" x="266" y="11" width="99" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="SiW-kf-L6U" kind="push" id="cOu-dv-QpN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zcf-R5-ARD">
-                                        <rect key="frame" x="10" y="11" width="39" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <state key="normal" title="Back">
-                                            <color key="titleColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="SiW-kf-L6U" kind="push" id="cOu-dv-QpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zcf-R5-ARD">
+                                <rect key="frame" x="10" y="553" width="39" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="name-text-filled" id="tc2-iC-RVm">
                                 <rect key="frame" x="12" y="152" width="340" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -894,7 +895,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="nextBarView" destination="jPI-jk-Kdz" id="vfJ-5J-V69"/>
+                        <outlet property="nextButton" destination="EJa-QA-Pkg" id="4iZ-j4-HpY"/>
                         <outlet property="textImageView" destination="tc2-iC-RVm" id="Nek-af-bIF"/>
                     </connections>
                 </viewController>
@@ -1309,6 +1310,9 @@
         <image name="create-3-category-instructions" width="375" height="117"/>
         <image name="create-project-action-2x" width="37" height="28"/>
         <image name="descrip-text-filled" width="348" height="117"/>
+        <image name="feed-new-project" width="359" height="440"/>
+        <image name="feed-prev-projects" width="359" height="806"/>
+        <image name="feedback-blip-published" width="239" height="239"/>
         <image name="home-tab-2x" width="75" height="50"/>
         <image name="joined-notification" width="239" height="239"/>
         <image name="m-profile-page" width="375" height="1217"/>
@@ -1329,7 +1333,6 @@
         <image name="screen-invite-1-landing" width="375" height="667"/>
         <image name="screen-invite-2-search" width="375" height="667"/>
         <image name="screen-invite-email" width="375" height="667"/>
-        <image name="screen-updated-home" width="375" height="667"/>
         <image name="search-icon-2x" width="31" height="30"/>
         <image name="selected-check-icon" width="25" height="25"/>
         <image name="status-active-selected" width="150" height="25"/>

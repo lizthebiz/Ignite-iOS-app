@@ -17,7 +17,7 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var selectedTechImageView: UIImageView!
     
     @IBOutlet weak var selectedWomImageView: UIImageView!
-    
+
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -30,7 +30,6 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
         self.selectedWomImageView.alpha = 0
         
         categoriesScrollView.delegate = self
-        
         categoriesScrollView.contentSize = CGSizeMake(375, 1341)
         
     }
@@ -59,12 +58,12 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
         })
     }
     
-    @IBAction func onTapWom(sender: AnyObject) {
-        
+
+    @IBAction func onTapWom(sender: UIButton) {
         self.selectedWomImageView.alpha = 1
-//        UIView.animateWithDuration(0.8, animations: {
-//            self.nextButton.alpha = 1
-//        })
+        UIView.animateWithDuration(0.8, animations: {
+            self.nextButton.alpha = 1
+        })
+        
     }
-    
 }
