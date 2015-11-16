@@ -119,7 +119,7 @@ class loginViewController: UIViewController {
         
         self.loginActivityIndicator.startAnimating()
         
-        delay(3){
+        delay(2){
             
             self.loginActivityIndicator.stopAnimating()
             

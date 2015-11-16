@@ -41,15 +41,15 @@ class homeFeedViewController: UIViewController, UITableViewDataSource, UITableVi
         
        ownerImageViews = ["https://lh4.googleusercontent.com/HVZE7wFc2_jcl1duO9RvM8SBlSdfg6cTZHe0rCASZI9oM6gdUjAHDfE_cHY5p-EhXLnxCEeYH6VfYuvXE4Q7M8WNuhH56mAbeB_WHWyJHCkaziFpavpLxmAhQ4o89n-t2SqV3DY", "https://lh4.googleusercontent.com/DGT9WURaTrS8mYpzVfB_DUEHIx1Ni96hxzLNY-HT5BrGEk7I0J_fwcweUd7-Wty4za1VD74XdSknSHniDDE4ZnN-1eMdNd-PTboVgT96KDKaClNv76U9hJovgvSu1bG-Zs79Ods", "https://lh3.googleusercontent.com/tfDSLK906rdtexmFtMkaYpQzf5UBWGpHYePRHZzJX14gmvWYgBe4YTdH1Ri5WAUpAkuHmUL5_o1BDlbrwnymlnC-63VCHXe89UYi4Ias9awVVlTtY8W9eihGvZ7brlBTtKT-EZU"]
         
-        ownerNameLabels = ["Susie Arendt", "Silvia Menendez", "Nate Anderson"]
+        ownerNameLabels = ["Susie Arendt and 16 participants", "Silvia Menendez and 58 participants", "Nate Anderson and 36 participants"]
         
-        projImageViews = ["https://lh4.googleusercontent.com/QhULqT_u_Jnjn3oXszHTr3itieh5A1rvohT4VCaMi5EQs4941T-bl3iM2A-hsxVnfs4A-yw70qnzXJJoenkndpxDU8K6NtJK7fgvmgKliPZ2Meoqp2vVOP5qYykiNcs6Uc-AQNlM", "https://lh6.googleusercontent.com/dFTkm4S1x5vtO8TOFMUosughG4TS6p9qNfOND0KhVI-cvMvoxpKi_qmiUOWt5AtyNzNUgVDvnwj2K_qvvb8T-l0CxGUQv_5-DOluvLY8LreDnSFfJL-JSQzea6frexldrv7c6fqY", "https://lh3.googleusercontent.com/QSriv_RKJLMFsWDdGAHUOomvEUiqYwdqkUiOYVC4TqeFNdjAyev8kZMRVBFPIjkSPGoyh58duYOj3-uswBRD1fjZrB4yXPJRqaA2-PdvTsM_NGB6Rh-AL2FyECvrLg_R9J6L62st"]
+        projImageViews = ["https://lh4.googleusercontent.com/QhULqT_u_Jnjn3oXszHTr3itieh5A1rvohT4VCaMi5EQs4941T-bl3iM2A-hsxVnfs4A-yw70qnzXJJoenkndpxDU8K6NtJK7fgvmgKliPZ2Meoqp2vVOP5qYykiNcs6Uc-AQNlM", "https://lh3.googleusercontent.com/HTaEYLJNar8eVqDJ-nu_M3V8ioYsf1UVkEVvrI_Xi4xScbEGMqhH0q7pQFoQ8otaBI_BHWIveI9Eo-3-hKihJN3vVGGLaN63-r1s7aPiFcNwIcDqcT4wIt5IvIs59HFKPuoT9sA9", "https://lh3.googleusercontent.com/QSriv_RKJLMFsWDdGAHUOomvEUiqYwdqkUiOYVC4TqeFNdjAyev8kZMRVBFPIjkSPGoyh58duYOj3-uswBRD1fjZrB4yXPJRqaA2-PdvTsM_NGB6Rh-AL2FyECvrLg_R9J6L62st"]
         
-//        firstBadgeImageViews = ["Susie Arendt", "Silvia Menendez", "Nate Anderson"]
+        firstBadgeImageViews = ["https://lh3.googleusercontent.com/CGjcOsRUP4BTp28wJayc-VQgAFQvHx__UydnjXjTBVVvIOQtpUs0LLpvq7RG1NsM2oSvnoPra15IrzGVU2esAWB_lP0eJdZ6U5lL7Y1GsGDGlZErBhe0LSXNsEsB_CQ24jsKmCa3", "https://lh3.googleusercontent.com/Fu_rDZoa4v-tXCtR2Bgu5HqONjOmZxKhmnsA6iMQAqA3Gb8C5efLqJsGp4LeN8_UCBhx52PlRjsouoYnCEae70eogNS-lvLXltjn9SLXLbgAVUlnyD_cxMpScXaqMZGehn-3ZE6n", "https://lh3.googleusercontent.com/Fu_rDZoa4v-tXCtR2Bgu5HqONjOmZxKhmnsA6iMQAqA3Gb8C5efLqJsGp4LeN8_UCBhx52PlRjsouoYnCEae70eogNS-lvLXltjn9SLXLbgAVUlnyD_cxMpScXaqMZGehn-3ZE6n"]
 
-//        secondBadgeImageViews = ["Susie Arendt", "Silvia Menendez", "Nate Anderson"]
+        secondBadgeImageViews = ["https://lh3.googleusercontent.com/IioHXIpIKgg0k77dgicdWjT69hx84KYvjn21r_Ddq5jkQlDZybHPvVULwxSQvFkgv-8lXrtf3ls7cp1SjXMgNFDBbH_ovPI-iBm04-HLbyWjd4RpnsEAGEeuTjmGELXiXIG2gJ3-", "https://lh4.googleusercontent.com/QKar9L5UwRvMGsP4MsjqOykSCmf3YCzYzx9ic7VZvyYrLAKY4LyKdpR1lKhuQIrfo1dLI7x96JGDdRLmIU9BpQhGjneknJC_4SyR7lp_MBz8hkKM1cdcHEgeMrdqQ2RIEIrZewtJ", "https://lh3.googleusercontent.com/CGjcOsRUP4BTp28wJayc-VQgAFQvHx__UydnjXjTBVVvIOQtpUs0LLpvq7RG1NsM2oSvnoPra15IrzGVU2esAWB_lP0eJdZ6U5lL7Y1GsGDGlZErBhe0LSXNsEsB_CQ24jsKmCa3"]
 
-//        thirdBadgeImageViews = ["Susie Arendt", "Silvia Menendez", "Nate Anderson"]
+        thirdBadgeImageViews = ["nil", "nil", "https://lh5.googleusercontent.com/ry78TAJDSh67ZZzcrVpM0ILvWSiwXEPTKexg__vBrW4bc8plvkcFFej_ubL7E83B85Xj2hwQnVqGDRA4ch-IAYWE07liwh72c9hN-h3Krswi334pnL1nqcISxbEx331l9jrHTR-y"]
         
         projNameLabels = ["Assist WWll veterans with departures and returns from SFO", "Walmart eCommerce Toastmasters club", "Help organize the 2016 Walmart PRIDE contingent at the SF Pride Parade!"]
         
@@ -96,8 +96,14 @@ class homeFeedViewController: UIViewController, UITableViewDataSource, UITableVi
         let projImgUrl = NSURL(string: projImageViews[indexPath.row])!
         cell.projImageView.setImageWithURL(projImgUrl)
         
-//        let url = NSURL(string: firstBadgeImageViews[indexPath.row])!
-//        cell.firstBadgeImageView.setImageWithURL(url)
+        let firstBadgeUrl = NSURL(string: firstBadgeImageViews[indexPath.row])!
+        cell.firstBadgeImageView.setImageWithURL(firstBadgeUrl)
+        
+        let secondBadgeUrl = NSURL(string: secondBadgeImageViews[indexPath.row])!
+        cell.secondBadgeImageView.setImageWithURL(secondBadgeUrl)
+
+        let thirdBadgeUrl = NSURL(string: thirdBadgeImageViews[indexPath.row])!
+        cell.thirdBadgeImageView.setImageWithURL(thirdBadgeUrl)
         
         let projNameLabel = projNameLabels[indexPath.row]
         cell.projNameLabel.text = projNameLabel

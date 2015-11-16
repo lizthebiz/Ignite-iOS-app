@@ -1,29 +1,27 @@
 //
-//  DescripViewController.swift
+//  InviteMariaViewController.swift
 //  Ignite
 //
-//  Created by Liz Dalay on 11/12/15.
+//  Created by Liz Dalay on 11/15/15.
 //  Copyright © 2015 Liz Dalay. All rights reserved.
 //
 
 import UIKit
 
-class DescripViewController: UIViewController {
+class InviteMariaViewController: UIViewController {
+    
+    @IBOutlet weak var selectedIconImageView: UIImageView!
 
-    @IBOutlet weak var descripTextImageView: UIImageView!
-    
-    @IBOutlet weak var statusImageView: UIImageView!
-    
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var fullNameImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.nextButton.alpha = 0
-        self.descripTextImageView.alpha = 0
-        self.statusImageView.alpha = 0
+        self.selectedIconImageView.alpha = 0
+        
+        self.fullNameImageView.alpha = 0
         
     }
 
@@ -43,18 +41,11 @@ class DescripViewController: UIViewController {
     }
     */
 
-    @IBAction func onTapTextField(sender: AnyObject) {
+    @IBAction func onTap(sender: AnyObject) {
         
-        self.descripTextImageView.alpha = 1
-    }
-    
-    @IBAction func onTapStatus(sender: AnyObject) {
+        self.selectedIconImageView.alpha = 1
         
-        self.statusImageView.alpha = 1
-        
-        UIView.animateWithDuration(0.8, animations: {
-            self.nextButton.alpha = 1
-        })
+        self.fullNameImageView.alpha = 1
         
     }
 }

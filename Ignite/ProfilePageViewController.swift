@@ -1,27 +1,19 @@
 //
-//  audienceViewController.swift
+//  ProfilePageViewController.swift
 //  Ignite
 //
-//  Created by Liz Dalay on 11/11/15.
+//  Created by Liz Dalay on 11/15/15.
 //  Copyright © 2015 Liz Dalay. All rights reserved.
 //
 
 import UIKit
 
-class audienceViewController: UIViewController {
-    
-    @IBOutlet weak var selectedIconImageView: UIImageView!
-    
-    @IBOutlet weak var nextButton: UIButton!
-    
+class ProfilePageViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.selectedIconImageView.alpha = 0
-        self.nextButton.alpha = 0
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +31,5 @@ class audienceViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    @IBAction func onTap(sender: AnyObject) {
-        
-        self.selectedIconImageView.alpha = 1
-        
-        UIView.animateWithDuration(0.8, animations: {
-                    self.nextButton.alpha = 1
-        })
-    }
 
 }
