@@ -10,10 +10,16 @@ import UIKit
 
 class ProfilePageViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var profileScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+         profileScrollView.contentSize = profileImageView.image!.size
     }
 
     override func didReceiveMemoryWarning() {

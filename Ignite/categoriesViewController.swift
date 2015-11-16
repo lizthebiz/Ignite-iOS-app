@@ -14,19 +14,24 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var categoriesView: UIView!
     
-    @IBOutlet weak var nextBarView: UIView!
+    @IBOutlet weak var selectedTechImageView: UIImageView!
+    
+    @IBOutlet weak var selectedWomImageView: UIImageView!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.nextBarView.alpha = 1
+        self.nextButton.alpha = 0
+        self.selectedTechImageView.alpha = 0
+        self.selectedWomImageView.alpha = 0
         
         categoriesScrollView.delegate = self
         
         categoriesScrollView.contentSize = CGSizeMake(375, 1341)
-        
         
     }
 
@@ -46,4 +51,20 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
     }
     */
 
+    @IBAction func onTapTech(sender: AnyObject) {
+        
+        self.selectedTechImageView.alpha = 1
+        UIView.animateWithDuration(0.8, animations: {
+            self.nextButton.alpha = 1
+        })
+    }
+    
+    @IBAction func onTapWom(sender: AnyObject) {
+        
+        self.selectedWomImageView.alpha = 1
+//        UIView.animateWithDuration(0.8, animations: {
+//            self.nextButton.alpha = 1
+//        })
+    }
+    
 }

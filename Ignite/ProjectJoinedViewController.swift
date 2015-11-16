@@ -10,10 +10,16 @@ import UIKit
 
 class ProjectJoinedViewController: UIViewController {
 
+    @IBOutlet weak var projPageImageView: UIImageView!
+    
+    @IBOutlet weak var projPageScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+         projPageScrollView.contentSize = projPageImageView.image!.size
     }
 
     override func didReceiveMemoryWarning() {
