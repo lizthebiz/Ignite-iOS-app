@@ -10,7 +10,7 @@ import UIKit
 
 class ProjectPageViewController: UIViewController {
 
-    @IBOutlet weak var projPageImageView: UIImageView!
+    @IBOutlet weak var projPageView: UIView!
     
     @IBOutlet weak var projPageScrollView: UIScrollView!
     
@@ -25,7 +25,7 @@ class ProjectPageViewController: UIViewController {
         
         //projPageScrollView.contentSize = projPageImageView.image!.size
         
-        projPageScrollView.contentSize = CGSize(width: 375, height: 667)
+        projPageScrollView.contentSize = CGSize(width: 375, height: 720)
         
         self.mariaButton.alpha = 0
         self.welcomeImageView.alpha = 0
@@ -50,7 +50,7 @@ class ProjectPageViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         UIView.animateWithDuration(0.4, delay: 0.5, options: [], animations: { () -> Void in
             
-            self.projPageImageView.center.y = 335
+            self.projPageView.center.y = 333
             
             }) { (Bool) -> Void in
                 []

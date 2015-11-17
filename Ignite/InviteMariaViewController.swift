@@ -10,18 +10,28 @@ import UIKit
 
 class InviteMariaViewController: UIViewController {
     
-    @IBOutlet weak var selectedIconImageView: UIImageView!
-
-    @IBOutlet weak var fullNameImageView: UIImageView!
+    @IBOutlet weak var placeholderTextField: UITextField!
+    
+    @IBOutlet weak var searchImageView: UIImageView!
+    
+    @IBOutlet weak var selectedImageView: UIImageView!
+    
+    @IBOutlet weak var fieldImageView: UIImageView!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.selectedIconImageView.alpha = 0
+        self.searchImageView.alpha = 0
         
-        self.fullNameImageView.alpha = 0
+        self.selectedImageView.alpha = 0
+        
+        self.fieldImageView.alpha = 0
+        
+        nextButton.enabled = false
         
     }
 
@@ -40,12 +50,22 @@ class InviteMariaViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
     @IBAction func onTap(sender: AnyObject) {
         
-        self.selectedIconImageView.alpha = 1
+        self.searchImageView.alpha = 1
+    }
+
+    @IBAction func onSelect(sender: AnyObject) {
         
-        self.fullNameImageView.alpha = 1
+        self.selectedImageView.alpha = 1
+        
+        self.fieldImageView.alpha = 1
+        
+        placeholderTextField.endEditing(true)
+        
+        nextButton.enabled = true
+        
         
     }
 }

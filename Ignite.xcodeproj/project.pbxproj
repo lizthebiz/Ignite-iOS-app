@@ -10,7 +10,6 @@
 		2D905A009ED5E1CB333EFF9C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D02138BADF5CE1032825BB0 /* Pods.framework */; };
 		D129B70C1BFAFDAE00210002 /* PostPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D129B70B1BFAFDAE00210002 /* PostPublishViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D1513E0D1BFA9A73000E60DB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1513E0C1BFA9A73000E60DB /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D16F98C71BF9AF08007DD12F /* ProjectJoinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F98C61BF9AF08007DD12F /* ProjectJoinedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D16F98C91BF9AF16007DD12F /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F98C81BF9AF16007DD12F /* ProfilePageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D17016161BF3B6560014899E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016151BF3B6560014899E /* AppDelegate.swift */; };
 		D17016181BF3B6560014899E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016171BF3B6560014899E /* ViewController.swift */; };
@@ -57,7 +56,6 @@
 		9A74836C16CE7BCF33059A05 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D129B70B1BFAFDAE00210002 /* PostPublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostPublishViewController.swift; sourceTree = "<group>"; };
 		D1513E0C1BFA9A73000E60DB /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		D16F98C61BF9AF08007DD12F /* ProjectJoinedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectJoinedViewController.swift; sourceTree = "<group>"; };
 		D16F98C81BF9AF16007DD12F /* ProfilePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		D17016121BF3B6560014899E /* Ignite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ignite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17016151BF3B6560014899E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				D1A907FA1BF9A4A8009401DA /* InviteMariaViewController.swift */,
 				D1A907FC1BF9A7BC009401DA /* EmailViewController.swift */,
 				D1A907FE1BF9A833009401DA /* ProjectPageViewController.swift */,
-				D16F98C61BF9AF08007DD12F /* ProjectJoinedViewController.swift */,
 				D16F98C81BF9AF16007DD12F /* ProfilePageViewController.swift */,
 			);
 			name = "View Controllers";
@@ -393,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19D2F071BF48F2100696DE7 /* categoriesViewController.swift in Sources */,
-				D16F98C71BF9AF08007DD12F /* ProjectJoinedViewController.swift in Sources */,
 				D17016181BF3B6560014899E /* ViewController.swift in Sources */,
 				D17016481BF3E7A20014899E /* projectCardCell.swift in Sources */,
 				D16F98C91BF9AF16007DD12F /* ProfilePageViewController.swift in Sources */,
