@@ -60,11 +60,12 @@ class ProjectPageViewController: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0.8, options: [], animations: { () -> Void in
             
             self.welcomeImageView.alpha = 1
-            self.mariaButton.alpha = 1
+            //self.mariaButton.alpha = 1
             
             }) { (Bool) -> Void in
-                [UIView.animateWithDuration(2.5, delay: 0.4, options: [], animations: { () -> Void in
+                [UIView.animateWithDuration(1.5, delay: 0.4, options: [], animations: { () -> Void in
                     self.welcomeImageView.alpha = 0
+                    self.mariaButton.alpha = 1
                     }) { (Bool) -> Void in
                         []
                     } ]
