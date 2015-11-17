@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="mbQ-Au-8Am">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Re4-Ky-sa0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -212,56 +212,6 @@
             </objects>
             <point key="canvasLocation" x="1045.5" y="2089.5"/>
         </scene>
-        <!--Ignite-->
-        <scene sceneID="rvC-m8-sbo">
-            <objects>
-                <viewController id="BrZ-Hs-cXg" customClass="ViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="92r-bo-UBv">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eq5-cS-MCM">
-                                <rect key="frame" x="193" y="405" width="164" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-prev-projects" id="yAu-lT-Gl1">
-                                <rect key="frame" x="8" y="8" width="359" height="806"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-new-project" id="NE3-mC-kId">
-                                <rect key="frame" x="8" y="8" width="359" height="440"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feedback-blip-published" id="7yU-GS-h8L">
-                                <rect key="frame" x="68" y="132" width="239" height="239"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav" id="D8v-V0-Nib">
-                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Ignite" id="kD9-I9-kmT">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="EWh-AM-r4B">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Znz-n0-I6J">
-                                <rect key="frame" x="322" y="8" width="37" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="create-project-action-2x"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="feedbackImageView" destination="7yU-GS-h8L" id="MIM-DI-bZk"/>
-                        <outlet property="previousImageView" destination="yAu-lT-Gl1" id="Qe8-83-xMc"/>
-                        <outlet property="publishedImageView" destination="NE3-mC-kId" id="ko3-BV-OCz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n7W-vT-hqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5559.5" y="2089.5"/>
-        </scene>
         <!--Email View Controller-->
         <scene sceneID="FQx-tb-nxn">
             <objects>
@@ -291,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="3977.5" y="4081.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="t0w-QJ-wNm">
             <objects>
-                <viewController id="cho-Ek-ioT" sceneMemberID="viewController">
+                <viewController id="cho-Ek-ioT" customClass="LaunchViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0wt-mx-CYh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,6 +260,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g6E-Aa-6Go">
+                                <rect key="frame" x="0.0" y="341" width="375" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="VCQ-1d-tvU" kind="modal" modalTransitionStyle="crossDissolve" id="z5e-bs-9fk"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" id="3wx-m8-W25">
+                                <rect key="frame" x="178" y="251" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -396,12 +358,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Project" id="oed-ZV-2ei">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="taD-lc-Q0d">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bVU-z3-RiO">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                    <navigationItem key="navigationItem" title="Project" id="cGQ-lk-aCx">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ygw-uK-bR8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Mv-tg-Tbz">
+                                <rect key="frame" x="16" y="11" width="13" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="icon-back"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -446,10 +408,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="rCE-ee-hSh">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="yjx-Jx-rVt">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BqM-sE-wfC">
-                                <rect key="frame" x="16" y="7" width="50" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BqM-sE-wfC">
+                                <rect key="frame" x="16" y="11" width="13" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" image="icon-back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -477,12 +439,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Who would you like to invite?" textAlignment="natural" minimumFontSize="17" id="RAS-75-rHb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Who would you like to invite?" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" id="RAS-75-rHb">
                                 <rect key="frame" x="45" y="11" width="268" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="search"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" red="0.94117647058823528" green="0.74901960784313726" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -530,15 +492,16 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="plR-Aj-LSC">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EMW-Bv-Vy8">
-                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <rect key="frame" x="319" y="7" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="mvJ-bI-jrr" kind="modal" id="akk-aT-9aW"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -594,6 +557,19 @@
                                 <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="This is a volunteer project for a local park…" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" id="3r9-up-jrL">
+                                <rect key="frame" x="12" y="198" width="353" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.94117647058823528" green="0.74901960784313726" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6ZB-G5-XYc">
                                 <rect key="frame" x="12" y="281" width="363" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -634,17 +610,6 @@
                                     <action selector="onTapStatus:" destination="cRm-yu-Snx" eventType="touchUpInside" id="hWv-Ow-yKG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="s1H-yE-01b">
-                                <rect key="frame" x="7" y="186" width="358" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">This is a volunteer project for a local park…
-Let’s help some veterans with…
-Looking for mentors for students…</string>
-                                <color key="textColor" red="0.94117647058823528" green="0.74901960784313726" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="descrip-text-filled" id="Jpq-5r-Q7E">
                                 <rect key="frame" x="12" y="198" width="348" height="117"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -668,7 +633,7 @@ Looking for mentors for students…</string>
                     <connections>
                         <outlet property="descripTextImageView" destination="Jpq-5r-Q7E" id="SXs-RX-cRS"/>
                         <outlet property="nextButton" destination="hvN-X0-gsO" id="Ruf-DP-xcU"/>
-                        <outlet property="placeholderTextView" destination="s1H-yE-01b" id="4QJ-A2-ufT"/>
+                        <outlet property="placeholderTextField" destination="3r9-up-jrL" id="NWO-hL-ugI"/>
                         <outlet property="statusImageView" destination="5Xc-OM-OZo" id="DtA-rZ-RzU"/>
                     </connections>
                 </viewController>
@@ -886,7 +851,7 @@ Looking for mentors for students…</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EJa-QA-Pkg">
                                 <rect key="frame" x="266" y="553" width="99" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -908,14 +873,6 @@ Looking for mentors for students…</string>
                                     <color key="titleColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Design an iOS app to help families shop together" textAlignment="natural" id="XLc-hj-tBT">
-                                <rect key="frame" x="7" y="163" width="358" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.74901960779999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tg3-bj-GAl">
                                 <rect key="frame" x="12" y="215" width="363" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -923,6 +880,19 @@ Looking for mentors for students…</string>
                                     <action selector="onTap:" destination="HMS-4e-jKj" eventType="touchUpInside" id="V5J-Dr-oHU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Volunteer at the SF Food Bank on Nov 14..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" id="dMv-3l-Aev">
+                                <rect key="frame" x="12" y="172" width="345" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.94117647058823528" green="0.74901960784313726" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="name-text-filled" id="tc2-iC-RVm">
                                 <rect key="frame" x="12" y="152" width="340" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -945,7 +915,7 @@ Looking for mentors for students…</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="nextButton" destination="EJa-QA-Pkg" id="4iZ-j4-HpY"/>
-                        <outlet property="placeholderTextView" destination="XLc-hj-tBT" id="XrQ-PN-9AW"/>
+                        <outlet property="placeholderTextField" destination="dMv-3l-Aev" id="d1q-sa-QaD"/>
                         <outlet property="textImageView" destination="tc2-iC-RVm" id="Nek-af-bIF"/>
                     </connections>
                 </viewController>
@@ -1133,29 +1103,6 @@ Looking for mentors for students…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzC-YW-6HS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1535.5" y="2089.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="P4V-ng-fHx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8gN-JJ-YeU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="e0z-hW-cu4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BrZ-Hs-cXg" kind="relationship" relationship="rootViewController" id="cHq-nc-tiP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Caq-BR-8cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5109.5" y="1900.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W34-1H-phy">
@@ -1444,12 +1391,12 @@ Looking for mentors for students…</string>
             <point key="canvasLocation" x="3949.5" y="3112.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="9Wf-1K-6hJ">
+        <scene sceneID="wD5-XW-OXf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="elx-aR-hdQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VCQ-1d-tvU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jMb-uC-Lzb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7PH-WI-DiO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1459,10 +1406,10 @@ Looking for mentors for students…</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="p5h-ox-ETc" kind="relationship" relationship="rootViewController" id="W4t-9W-Gkg"/>
+                        <segue destination="p5h-ox-ETc" kind="relationship" relationship="rootViewController" id="ryF-Vo-wYS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yHQ-vD-bAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hjx-dB-EJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4966.5" y="4081.5"/>
         </scene>
@@ -1478,6 +1425,7 @@ Looking for mentors for students…</string>
         <image name="feedback-blip-joined" width="239" height="239"/>
         <image name="feedback-blip-published" width="239" height="239"/>
         <image name="home-tab-2x" width="75" height="50"/>
+        <image name="icon-back" width="13" height="20"/>
         <image name="invite-1-landing" width="375" height="603"/>
         <image name="invite-2-search" width="375" height="603"/>
         <image name="m-profile-updated" width="375" height="1217"/>

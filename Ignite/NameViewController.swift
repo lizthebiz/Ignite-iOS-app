@@ -14,7 +14,7 @@ class NameViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    @IBOutlet weak var placeholderTextView: UITextView!
+    @IBOutlet weak var placeholderTextField: UITextField!
     
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
@@ -57,7 +57,7 @@ class NameViewController: UIViewController {
         
         self.textImageView.alpha = 1
         
-        placeholderTextView.endEditing(true)
+        placeholderTextField.endEditing(true)
 
         nextButton.enabled = true
         UIView.animateWithDuration(0.3, animations: {

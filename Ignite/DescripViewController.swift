@@ -16,7 +16,7 @@ class DescripViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    @IBOutlet weak var placeholderTextView: UITextView!
+    @IBOutlet weak var placeholderTextField: UITextField!
     
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
@@ -37,8 +37,6 @@ class DescripViewController: UIViewController {
         
         nextButton.enabled = false
         
-        self.placeholderTextView.text = "Placeholder"
-        placeholderTextView.textColor = self.UIColorFromRGB(0xFF6400)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,17 +54,12 @@ class DescripViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func textViewDidBeginEditing(placeholderTextView: UITextView) {
-        
-        self.placeholderTextView.text = nil
-    }
 
     @IBAction func onTapTextField(sender: AnyObject) {
         
         self.descripTextImageView.alpha = 1
         
-        placeholderTextView.endEditing(true)
+        placeholderTextField.endEditing(true)
         
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
     }

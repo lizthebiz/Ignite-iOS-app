@@ -45,7 +45,7 @@ class PostPublishViewController: UIViewController {
             self.confirmBlip2.alpha = 1
             
             }) { (Bool) -> Void in
-                [UIView.animateWithDuration(1.8, delay: 0.9, options: [], animations: { () -> Void in
+                [UIView.animateWithDuration(1.5, delay: 0.8, options: [], animations: { () -> Void in
                     self.confirmBlip2.alpha = 0
                     }) { (Bool) -> Void in
                         []
@@ -55,7 +55,7 @@ class PostPublishViewController: UIViewController {
     
         //a bit after loading, start slowly moving the original projects in the "parent" feed down.
         //when the "parent feed" is done moving down, wait a bit and then start quickly fading in rebecca's project.
-        UIView.animateWithDuration(0.5, delay: 0.4, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 0.3, options: [], animations: { () -> Void in
             self.parentViewOldFeed.center.y = 725
             }, completion: { (Bool) -> Void in [UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
