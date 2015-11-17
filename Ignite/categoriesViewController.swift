@@ -34,7 +34,8 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
 
         // Do any additional setup after loading the view.
         
-        self.nextButton.alpha = 0
+        nextButton.enabled = false
+        
         self.selectedTechImageView.alpha = 0
         self.selectedWomImageView.alpha = 0
         
@@ -62,16 +63,20 @@ class categoriesViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func onTapTech(sender: AnyObject) {
         
         self.selectedTechImageView.alpha = 1
-        UIView.animateWithDuration(0.8, animations: {
-            self.nextButton.alpha = 1
+        
+        nextButton.enabled = true
+        UIView.animateWithDuration(0.5, animations: {
+            self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
     }
     
 
     @IBAction func onTapWom(sender: UIButton) {
         self.selectedWomImageView.alpha = 1
-        UIView.animateWithDuration(0.8, animations: {
-            self.nextButton.alpha = 1
+        
+        nextButton.enabled = true
+        UIView.animateWithDuration(0.3, animations: {
+            self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
         
     }

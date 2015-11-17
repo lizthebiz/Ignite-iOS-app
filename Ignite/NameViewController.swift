@@ -14,6 +14,8 @@ class NameViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var placeholderTextView: UITextView!
+    
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -54,9 +56,11 @@ class NameViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         
         self.textImageView.alpha = 1
+        
+        placeholderTextView.endEditing(true)
 
         nextButton.enabled = true
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.3, animations: {
           self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
         

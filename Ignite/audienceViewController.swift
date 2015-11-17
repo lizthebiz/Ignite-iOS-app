@@ -55,7 +55,7 @@ class audienceViewController: UIViewController {
         self.selectedIconImageView.alpha = 1
         
         nextButton.enabled = true
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.3, animations: {
             self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
     }

@@ -39,15 +39,14 @@ class DetailsViewController: UIViewController {
     }
     */
     
-    func viewWillAppear() {
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        //print("hi")
+        self.counter += 1;
         
-        print("hi")
-        //self.counter += 1;
-        
-        if (counter > 2) {
+        if (counter > 1) {
             
             // different content gets loaded
-            print("hello")
+            //print("hello")
             self.updatedDeetsView.alpha = 1
         }
     }

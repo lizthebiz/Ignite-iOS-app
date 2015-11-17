@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8gN-JJ-YeU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="elx-aR-hdQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -215,7 +215,7 @@
         <!--Ignite-->
         <scene sceneID="rvC-m8-sbo">
             <objects>
-                <viewController id="BrZ-Hs-cXg" customClass="UpdatedHomeViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BrZ-Hs-cXg" customClass="ViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="92r-bo-UBv">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,9 +223,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eq5-cS-MCM">
                                 <rect key="frame" x="193" y="405" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="mbQ-Au-8Am" kind="modal" modalTransitionStyle="coverVertical" id="2Ni-sT-FdW"/>
-                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-prev-projects" id="yAu-lT-Gl1">
                                 <rect key="frame" x="8" y="8" width="359" height="806"/>
@@ -263,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7W-vT-hqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4491.5" y="3112.5"/>
+            <point key="canvasLocation" x="5559.5" y="2089.5"/>
         </scene>
         <!--Email View Controller-->
         <scene sceneID="FQx-tb-nxn">
@@ -281,7 +278,7 @@
                                 <rect key="frame" x="15" y="372" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="XIq-dg-6ib" kind="modal" modalTransitionStyle="coverVertical" id="cPv-J3-8Tn"/>
+                                    <segue destination="cho-Ek-ioT" kind="modal" id="aSG-Hn-Xfc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -294,86 +291,182 @@
             </objects>
             <point key="canvasLocation" x="3977.5" y="4081.5"/>
         </scene>
-        <!--Project-->
-        <scene sceneID="zkp-8P-7BA">
+        <!--View Controller-->
+        <scene sceneID="t0w-QJ-wNm">
             <objects>
-                <viewController id="ffu-lp-STk" customClass="ProjectPageViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aGK-y8-a0D">
-                        <rect key="frame" x="0.0" y="64" width="375" height="619"/>
+                <viewController id="cho-Ek-ioT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0wt-mx-CYh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vhM-BB-1tu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IgniteLogoTransBackground" id="aeo-03-evo" userLabel="solo flame">
+                                <rect key="frame" x="151" y="80" width="73" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ignite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gOv-zb-Dgt">
+                                <rect key="frame" x="110" y="192" width="156" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1G-8k-jBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4445.5" y="4081.5"/>
+        </scene>
+        <!--Project-->
+        <scene sceneID="bbZ-d2-xHY">
+            <objects>
+                <viewController id="p5h-ox-ETc" customClass="ProjectPageViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2GI-pT-xu4">
+                        <rect key="frame" x="0.0" y="64" width="375" height="721"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fgH-B4-cOu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-project-page" id="9Jn-Qb-nc3">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6kw-hv-Jo6">
-                                        <rect key="frame" x="254" y="203" width="109" height="41"/>
+                                    <view contentMode="scaleToFill" id="r3R-S9-Pz4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="GGR-ZJ-cvr" kind="push" animates="NO" id="Cc8-aP-Mx1"/>
-                                        </connections>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebecca Chin has invited you to join this project." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WfO-2t-PfF">
+                                                <rect key="frame" x="8" y="8" width="242" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OFv-94-MMm" userLabel="Join Now Button">
+                                                <rect key="frame" x="258" y="7" width="109" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Join Now">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onTap:" destination="p5h-ox-ETc" eventType="touchUpInside" id="vsc-7p-HSY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-project-page-updated" id="40N-ZX-3RX">
+                                        <rect key="frame" x="0.0" y="54" width="375" height="672"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zk0-9w-NnD">
+                                        <rect key="frame" x="68" y="591" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="photo-proj-page-maria"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav-notif" id="5q0-o2-wJL">
-                                <rect key="frame" x="0.0" y="569" width="375" height="50"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="joined-notification" id="fHn-vr-9md">
+                                <rect key="frame" x="68" y="103" width="239" height="239"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav-notif" id="Fq3-4t-hgA">
+                                <rect key="frame" x="0.0" y="671" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Project" id="ap4-VO-6ks"/>
+                    <navigationItem key="navigationItem" title="Project" id="oed-ZV-2ei">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="taD-lc-Q0d">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bVU-z3-RiO">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="683"/>
+                    <size key="freeformSize" width="375" height="785"/>
                     <connections>
-                        <outlet property="projPageImageView" destination="9Jn-Qb-nc3" id="t2Y-t4-WSX"/>
-                        <outlet property="projPageScrollView" destination="vhM-BB-1tu" id="mCA-Fj-wXN"/>
+                        <outlet property="mariaButton" destination="Zk0-9w-NnD" id="5cW-2D-SRs"/>
+                        <outlet property="projPageImageView" destination="40N-ZX-3RX" id="W5P-tI-Gm0"/>
+                        <outlet property="welcomeImageView" destination="fHn-vr-9md" id="d9l-Z1-NXP"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pc-2b-xsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3x-qF-6qy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4966.5" y="4081.5"/>
+            <point key="canvasLocation" x="5439.5" y="4081.5"/>
         </scene>
         <!--Project-->
         <scene sceneID="EEv-Ly-xLx">
             <objects>
                 <viewController id="GGR-ZJ-cvr" customClass="ProjectJoinedViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFa-Ff-7w7">
-                        <rect key="frame" x="0.0" y="64" width="375" height="721"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="785"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav-notif" id="o7w-lt-Ju4">
+                                <rect key="frame" x="0.0" y="735" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="joined-notification" id="yhx-59-UJA">
-                                <rect key="frame" x="68" y="241" width="239" height="239"/>
+                                <rect key="frame" x="68" y="103" width="239" height="239"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" id="lHB-YH-BP0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="671"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="735"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-project-joined" id="bbV-iY-Cd7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="shH-9s-6UI">
-                                        <rect key="frame" x="12" y="585" width="55" height="55"/>
+                                    <view contentMode="scaleToFill" id="i7W-iK-F4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebecca Chin has invited you to join this project." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nsv-Kf-NXF">
+                                                <rect key="frame" x="8" y="8" width="242" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1aL-Ub-Nhw" userLabel="Join Now Button">
+                                                <rect key="frame" x="258" y="7" width="109" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Join Now">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-project-page-updated" id="JWK-nJ-frj">
+                                        <rect key="frame" x="0.0" y="54" width="375" height="672"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0jz-S6-WqD">
+                                        <rect key="frame" x="75" y="589" width="55" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="photo-proj-page-maria"/>
                                         <connections>
-                                            <segue destination="lt4-wH-515" kind="push" id="Hu7-e3-02u"/>
+                                            <segue destination="lt4-wH-515" kind="push" id="hWO-GW-hEI"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav-notif" id="o7w-lt-Ju4">
-                                <rect key="frame" x="0.0" y="671" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -381,24 +474,26 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="785"/>
                     <connections>
-                        <outlet property="projPageImageView" destination="bbV-iY-Cd7" id="TEm-8b-JIR"/>
+                        <outlet property="mariaButton" destination="0jz-S6-WqD" id="56z-Tl-TNf"/>
+                        <outlet property="projPageImageView" destination="JWK-nJ-frj" id="02m-Nm-4ah"/>
                         <outlet property="projPageScrollView" destination="lHB-YH-BP0" id="ABi-ZD-Y38"/>
+                        <outlet property="welcomeConfirmImageView" destination="yhx-59-UJA" id="Gja-o0-6NC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oz0-8M-zyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5439.5" y="4081.5"/>
+            <point key="canvasLocation" x="5935.5" y="4117.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="SWe-ck-hCM">
             <objects>
                 <viewController id="lt4-wH-515" customClass="ProfilePageViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OBd-tu-eTh">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TCH-3h-ZhH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="m-profile-updated" id="Ry9-pk-Y07">
@@ -409,21 +504,20 @@
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav-notif" id="0hp-zT-G4x">
-                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="rCE-ee-hSh">
-                        <barButtonItem key="backBarButtonItem" title="Back" style="plain" id="NqK-wW-bF4">
-                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        </barButtonItem>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="yjx-Jx-rVt">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BqM-sE-wfC">
                                 <rect key="frame" x="16" y="7" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -435,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPq-vS-y0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5910.5" y="4081.5"/>
+            <point key="canvasLocation" x="6442.5" y="4081.5"/>
         </scene>
         <!--Invite People-->
         <scene sceneID="uxK-4z-DP5">
@@ -456,13 +550,6 @@
                                     <segue destination="g2d-KT-t5a" kind="push" animates="NO" id="hBy-Op-NPV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="hello" textAlignment="natural" minimumFontSize="17" id="dcb-vR-yrt">
-                                <rect key="frame" x="41" y="11" width="282" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -626,7 +713,7 @@
                                     <action selector="onTapStatus:" destination="cRm-yu-Snx" eventType="touchUpInside" id="hWv-Ow-yKG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="s1H-yE-01b">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="s1H-yE-01b">
                                 <rect key="frame" x="7" y="186" width="358" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -817,7 +904,7 @@ Looking for mentors for students…</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xVI-M8-hRq">
                                 <rect key="frame" x="266" y="1408" width="99" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -871,13 +958,6 @@ Looking for mentors for students…</string>
                                 <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tg3-bj-GAl">
-                                <rect key="frame" x="12" y="152" width="363" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="onTap:" destination="HMS-4e-jKj" eventType="touchUpInside" id="V5J-Dr-oHU"/>
-                                </connections>
-                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="next-bar-bg" id="MDi-eX-Yhl">
                                 <rect key="frame" x="0.0" y="542" width="375" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -907,6 +987,21 @@ Looking for mentors for students…</string>
                                     <color key="titleColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Design an iOS app to help families shop together" textAlignment="natural" id="XLc-hj-tBT">
+                                <rect key="frame" x="7" y="163" width="358" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.74901960779999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tg3-bj-GAl">
+                                <rect key="frame" x="12" y="215" width="363" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onTap:" destination="HMS-4e-jKj" eventType="touchUpInside" id="V5J-Dr-oHU"/>
+                                </connections>
+                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="name-text-filled" id="tc2-iC-RVm">
                                 <rect key="frame" x="12" y="152" width="340" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -929,6 +1024,7 @@ Looking for mentors for students…</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="nextButton" destination="EJa-QA-Pkg" id="4iZ-j4-HpY"/>
+                        <outlet property="placeholderTextView" destination="XLc-hj-tBT" id="XrQ-PN-9AW"/>
                         <outlet property="textImageView" destination="tc2-iC-RVm" id="Nek-af-bIF"/>
                     </connections>
                 </viewController>
@@ -952,7 +1048,7 @@ Looking for mentors for students…</string>
                                 <rect key="frame" x="0.0" y="313" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="4ml-w0-Xl7" kind="push" id="F3h-cu-CjY"/>
+                                    <segue destination="4ml-w0-Xl7" kind="push" id="Xgk-0B-PrX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SFt-GY-v57">
@@ -985,6 +1081,14 @@ Looking for mentors for students…</string>
                                         <state key="normal" title="Publish project">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="GzW-aO-8ya" kind="modal" id="oOD-QM-SYI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1039,6 +1143,7 @@ Looking for mentors for students…</string>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onTap:" destination="4ml-w0-Xl7" eventType="touchUpInside" id="dxE-lF-tIj"/>
+                                    <segue destination="iSO-cM-rK4" kind="unwind" unwindAction="prepareForUnwind:" id="xkI-r7-bwQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1058,52 +1163,9 @@ Looking for mentors for students…</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgM-6b-bi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iSO-cM-rK4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4401.5" y="2089.5"/>
-        </scene>
-        <!--Create a Project-->
-        <scene sceneID="2nA-JH-orX">
-            <objects>
-                <viewController id="a1C-jz-l05" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sOx-LE-lhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="screen-create-7-updated-deets" id="RVQ-Dv-NiL">
-                                <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y3R-zH-FKP">
-                                <rect key="frame" x="12" y="551" width="351" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <state key="normal" title="Publish project">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8gN-JJ-YeU" kind="modal" modalTransitionStyle="crossDissolve" id="oRL-eA-m4p"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Create a Project" id="3VL-Ra-7Nt">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="oZk-M2-Fhl">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gEQ-a2-nIG">
-                                <rect key="frame" x="16" y="7" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FfI-LN-Bnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4841.5" y="2089.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U6T-9y-pGt">
@@ -1172,13 +1234,14 @@ Looking for mentors for students…</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Caq-BR-8cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977.5" y="3112.5"/>
+            <point key="canvasLocation" x="5109.5" y="1900.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W34-1H-phy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mbQ-Au-8Am" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GGu-Nh-Ohm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1195,30 +1258,6 @@ Looking for mentors for students…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waQ-w0-xeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4966.5" y="3112.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Z2J-gK-ZdB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XIq-dg-6ib" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="NNs-zb-0Gr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ffu-lp-STk" kind="relationship" relationship="rootViewController" id="kEe-qV-Btj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lVS-wQ-EZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4491.5" y="4081.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="q4k-Oc-7y1">
@@ -1360,6 +1399,152 @@ Looking for mentors for students…</string>
             </objects>
             <point key="canvasLocation" x="587.5" y="540.5"/>
         </scene>
+        <!--Ignite-->
+        <scene sceneID="qXi-EK-mBh">
+            <objects>
+                <viewController id="1Fp-Fl-daS" customClass="PostPublishViewController" customModule="Ignite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FG9-Qf-qZO">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="5K2-da-ket" userLabel="rebeccas project loading in white">
+                                <rect key="frame" x="8" y="8" width="359" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ZKl-lQ-lRA" userLabel="parent view for old feed">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-prev-projects" id="fNa-Y7-Ny3">
+                                        <rect key="frame" x="8" y="8" width="359" height="806"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="sLq-lJ-7vq" userLabel="purple line">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="8"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qPt-vB-uRv" userLabel="Rebecca Chin's project">
+                                <rect key="frame" x="8" y="8" width="359" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eu4-g5-b7d" userLabel="Label for R's project">
+                                        <rect key="frame" x="93" y="190" width="158" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Rebecca Chin's project">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed-new-project" id="51z-1U-gfM">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="440"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Mv-rT-mW7" userLabel="invite people button">
+                                        <rect key="frame" x="182" y="400" width="175" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mbQ-Au-8Am" kind="modal" id="uhO-8n-r5C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="LIZ-db-Qil" userLabel="confirmBlip2 - use this one">
+                                <rect key="frame" x="68" y="100" width="239" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feedback-blip-published" id="3fr-CH-WYH" userLabel="confirmBlip2 image">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="239"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feedback-blip-published" id="wfY-5q-9Yl" userLabel="remnant - don't use or remove - Publish Confirmation Blip">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="239"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tab-nav" id="gDe-Ca-hwe">
+                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51764705879999995" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ignite" id="Pdi-Qg-CyQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="0Tl-pe-8Tk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TNz-d1-Cgy">
+                                <rect key="frame" x="322" y="8" width="37" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="create-project-action-2x"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="confirmBlip2" destination="LIZ-db-Qil" id="hE3-9i-nbt"/>
+                        <outlet property="parentViewOldFeed" destination="ZKl-lQ-lRA" id="jbY-Oh-qcu"/>
+                        <outlet property="publishConfirmationBlip" destination="wfY-5q-9Yl" id="427-e7-fSj"/>
+                        <outlet property="rebeccaProject" destination="qPt-vB-uRv" id="oJG-GH-fdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Rr-kw-2nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4445.5" y="3112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5yj-GF-IMA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GzW-aO-8ya" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wvc-m9-bos">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Fp-Fl-daS" kind="relationship" relationship="rootViewController" id="5JG-Gh-l4k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apP-Mh-1LR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3949.5" y="3112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Wf-1K-6hJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="elx-aR-hdQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jMb-uC-Lzb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21960784310000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p5h-ox-ETc" kind="relationship" relationship="rootViewController" id="W4t-9W-Gkg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHQ-vD-bAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4966.5" y="4081.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IgniteLogoTransBackground" width="181" height="228"/>
@@ -1373,12 +1558,12 @@ Looking for mentors for students…</string>
         <image name="home-tab-2x" width="75" height="50"/>
         <image name="joined-notification" width="239" height="239"/>
         <image name="m-profile-updated" width="375" height="1217"/>
-        <image name="m-project-joined" width="375" height="721"/>
-        <image name="m-project-page" width="375" height="619"/>
+        <image name="m-project-page-updated" width="375" height="672"/>
         <image name="m-screen-email" width="375" height="667"/>
         <image name="name-text-filled" width="340" height="17"/>
         <image name="next-bar-bg" width="375" height="61"/>
         <image name="notifications-icon-2x" width="30" height="30"/>
+        <image name="photo-proj-page-maria" width="55" height="55"/>
         <image name="profile-icon-2x" width="30" height="30"/>
         <image name="projects-icon-2x" width="40" height="31"/>
         <image name="screen-create-1-descrip" width="375" height="667"/>

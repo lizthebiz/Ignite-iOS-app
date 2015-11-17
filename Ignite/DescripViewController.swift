@@ -37,6 +37,8 @@ class DescripViewController: UIViewController {
         
         nextButton.enabled = false
         
+        self.placeholderTextView.text = "Placeholder"
+        placeholderTextView.textColor = self.UIColorFromRGB(0xFF6400)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +56,11 @@ class DescripViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func textViewDidBeginEditing(placeholderTextView: UITextView) {
+        
+        self.placeholderTextView.text = nil
+    }
 
     @IBAction func onTapTextField(sender: AnyObject) {
         
@@ -69,7 +76,7 @@ class DescripViewController: UIViewController {
         self.statusImageView.alpha = 1
         
         nextButton.enabled = true
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.3, animations: {
             self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
         

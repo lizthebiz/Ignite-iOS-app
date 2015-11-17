@@ -14,12 +14,21 @@ class ProjectPageViewController: UIViewController {
     
     @IBOutlet weak var projPageScrollView: UIScrollView!
     
+    @IBOutlet weak var mariaButton: UIButton!
+    
+    @IBOutlet weak var welcomeImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        projPageScrollView.contentSize = projPageImageView.image!.size
+        //projPageScrollView.contentSize = projPageImageView.image!.size
+        
+        projPageScrollView.contentSize = CGSize(width: 375, height: 667)
+        
+        self.mariaButton.alpha = 0
+        self.welcomeImageView.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,4 +47,27 @@ class ProjectPageViewController: UIViewController {
     }
     */
 
+    @IBAction func onTap(sender: AnyObject) {
+        UIView.animateWithDuration(0.4, delay: 0.5, options: [], animations: { () -> Void in
+            
+            self.projPageImageView.center.y = 335
+            
+            }) { (Bool) -> Void in
+                []
+                
+        }
+        
+        UIView.animateWithDuration(0.5, delay: 0.8, options: [], animations: { () -> Void in
+            
+            self.welcomeImageView.alpha = 1
+            self.mariaButton.alpha = 1
+            
+            }) { (Bool) -> Void in
+                [UIView.animateWithDuration(2.5, delay: 0.4, options: [], animations: { () -> Void in
+                    self.welcomeImageView.alpha = 0
+                    }) { (Bool) -> Void in
+                        []
+                    } ]
+        }
+    }
 }

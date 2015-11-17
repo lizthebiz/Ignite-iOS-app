@@ -32,6 +32,7 @@ class AddTimeViewController: UIViewController {
     }
     */
     @IBAction func onTap(sender: AnyObject) {
+
         
         navigationController!.popViewControllerAnimated(true)
     }
