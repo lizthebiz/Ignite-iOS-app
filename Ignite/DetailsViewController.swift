@@ -1,19 +1,26 @@
 //
-//  AddTimeViewController.swift
+//  DetailsViewController.swift
 //  Ignite
 //
-//  Created by Liz Dalay on 11/15/15.
+//  Created by Liz Dalay on 11/16/15.
 //  Copyright © 2015 Liz Dalay. All rights reserved.
 //
 
 import UIKit
 
-class AddTimeViewController: UIViewController {
+class DetailsViewController: UIViewController {
+    
+    @IBOutlet weak var updatedDeetsView: UIView!
+    
+    var counter = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.updatedDeetsView.alpha = 0
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,9 +38,18 @@ class AddTimeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func onTap(sender: AnyObject) {
+    
+    func viewWillAppear() {
         
-        navigationController!.popViewControllerAnimated(true)
+        print("hi")
+        //self.counter += 1;
+        
+        if (counter > 2) {
+            
+            // different content gets loaded
+            print("hello")
+            self.updatedDeetsView.alpha = 1
+        }
     }
 
 }

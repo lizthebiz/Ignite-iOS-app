@@ -16,14 +16,26 @@ class DescripViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var placeholderTextView: UITextView!
+    
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.nextButton.alpha = 0
         self.descripTextImageView.alpha = 0
         self.statusImageView.alpha = 0
+        
+        nextButton.enabled = false
         
     }
 
@@ -46,14 +58,19 @@ class DescripViewController: UIViewController {
     @IBAction func onTapTextField(sender: AnyObject) {
         
         self.descripTextImageView.alpha = 1
+        
+        placeholderTextView.endEditing(true)
+        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
     }
     
     @IBAction func onTapStatus(sender: AnyObject) {
         
         self.statusImageView.alpha = 1
         
-        UIView.animateWithDuration(0.8, animations: {
-            self.nextButton.alpha = 1
+        nextButton.enabled = true
+        UIView.animateWithDuration(0.5, animations: {
+            self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })
         
     }

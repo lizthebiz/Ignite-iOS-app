@@ -29,6 +29,8 @@ class NameViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.textImageView.alpha = 0
+        
+        nextButton.enabled = false
     
         
     }
@@ -52,7 +54,8 @@ class NameViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         
         self.textImageView.alpha = 1
-//      nextButton.backgroundColor = UIColorFromRGB(0xFF6400)
+
+        nextButton.enabled = true
         UIView.animateWithDuration(0.5, animations: {
           self.nextButton.backgroundColor = self.UIColorFromRGB(0xFF6400)
         })

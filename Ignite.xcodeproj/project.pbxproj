@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D905A009ED5E1CB333EFF9C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D02138BADF5CE1032825BB0 /* Pods.framework */; };
+		D1513E0D1BFA9A73000E60DB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1513E0C1BFA9A73000E60DB /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D16F98C71BF9AF08007DD12F /* ProjectJoinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F98C61BF9AF08007DD12F /* ProjectJoinedViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D16F98C91BF9AF16007DD12F /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F98C81BF9AF16007DD12F /* ProfilePageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D17016161BF3B6560014899E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17016151BF3B6560014899E /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		273EEFBB9829624AF9B8312F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7D02138BADF5CE1032825BB0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A74836C16CE7BCF33059A05 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D1513E0C1BFA9A73000E60DB /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D16F98C61BF9AF08007DD12F /* ProjectJoinedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectJoinedViewController.swift; sourceTree = "<group>"; };
 		D16F98C81BF9AF16007DD12F /* ProfilePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		D17016121BF3B6560014899E /* Ignite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ignite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				D19D2F041BF3FAF700696DE7 /* audienceViewController.swift */,
 				D19D2F061BF48F2100696DE7 /* categoriesViewController.swift */,
 				D1A907F41BF979AE009401DA /* NameViewController.swift */,
+				D1513E0C1BFA9A73000E60DB /* DetailsViewController.swift */,
 				D1A907F61BF97A8B009401DA /* AddTimeViewController.swift */,
 				D1A907F81BF9A431009401DA /* UpdatedHomeViewController.swift */,
 				D1A907FA1BF9A4A8009401DA /* InviteMariaViewController.swift */,
@@ -397,6 +400,7 @@
 				D1A907F11BF4A04A009401DA /* loginViewController.swift in Sources */,
 				D1A907F91BF9A431009401DA /* UpdatedHomeViewController.swift in Sources */,
 				D1A907F31BF51787009401DA /* DescripViewController.swift in Sources */,
+				D1513E0D1BFA9A73000E60DB /* DetailsViewController.swift in Sources */,
 				D191B8EE1BF3ECF7004B3C90 /* homeFeedViewController.swift in Sources */,
 				D1A907F71BF97A8B009401DA /* AddTimeViewController.swift in Sources */,
 				D1A907FF1BF9A833009401DA /* ProjectPageViewController.swift in Sources */,
